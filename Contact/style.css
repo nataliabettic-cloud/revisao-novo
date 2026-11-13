@@ -41,7 +41,68 @@ nav{
 }
 #menu-mobile, #menu-mobile img {
     display: none;
+
 }
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.formulario{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 12px rgb(66, 66, 66);
+    position: relative;
+}
+
+.wrap-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    font-size: 18px;
+    margin-top: 2vh;
+}
+
+input{
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+button{
+    padding: 10px;
+    margin-top: 20px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    background: black;
+    color: #ffffff;
+}
+.formulario img {
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -35px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px rgb(70, 69, 69);
+}
+
+
+
 
 @media (width <= 1000px){
     nav{
